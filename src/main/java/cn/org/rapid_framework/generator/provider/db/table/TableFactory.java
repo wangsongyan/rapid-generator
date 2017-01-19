@@ -241,7 +241,7 @@ public class TableFactory {
 					retriveTableColumns(table);
 				}
 //				table.initExportedKeys(connection.getMetaData());
-				table.initImportedKeys(connection.getMetaData());
+//				table.initImportedKeys(connection.getMetaData());
 				BeanHelper.copyProperties(table, TableOverrideValuesProvider.getTableConfigValues(table.getSqlName()));
 				return table;
 			}catch(SQLException e) {
