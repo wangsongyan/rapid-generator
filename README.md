@@ -25,5 +25,8 @@
 2. 修改列移除前缀时，className不正确的问题
 
 ##2016-07-13
-1.使用jackson的@JsonIgnore注解，解决将结果转为json字符串时，循环引用导致stackoverflow的问题
-2.包括Column的isNullable()方法也添加了上述注解
+1. 使用jackson的@JsonIgnore注解，解决将结果转为json字符串时，循环引用导致stackoverflow的问题
+2. 包括Column的isNullable()方法也添加了上述注解
+
+##2017-01-19
+1. 获取表信息的时候，忽略外键字段
